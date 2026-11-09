@@ -569,7 +569,22 @@ h6 {
 }
 
 /* Footer */
+.footer {
+    width: var(--width-full);
+    height: 150px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light);
+}
 
+.container p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 50px;
+}
 
 
 
