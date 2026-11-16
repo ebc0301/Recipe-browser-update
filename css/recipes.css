@@ -127,14 +127,24 @@ body {
 }
 
 
-/* Hero Section */
-.recipe_content{
-    display:grid;
-    grid-template-columns: 7fr 5fr;
-    gap:40px;
-    width: var(--width-12col);
-    margin: 0 auto;
+/* Recipe Section */
+.recipe content {
+    display: flex;
+    justify-content: center;
+    grid-row: 2;
+    color: var(--background-color-light);
+    min-height: 300px;
+
 }
+
+.recipe_left{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: var(--width-12col);
+    gap: var(--grid-gap);
+}
+
+/* Recipe Title */
 
 .recipe_hero {
     background-image: none;
@@ -142,6 +152,8 @@ body {
 
 .hero-container {
     width: var(--width-12col);
+    grid-column:1 / span 7;
+    grid-row: 1;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12), 1fr;
@@ -177,6 +189,31 @@ h6 {
     grid-row: 1;
     margin-top: 200px;
 }
+
+
+/* info */
+
+
+/* buttons */
+
+
+/* Image */
+
+.recipe_image {
+    grid-column: 9 / Span 5;
+    grid-row: 1;
+}
+
+.recipe_image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Instructions */
+
+
 
 /* Footer */
 .footer {
@@ -223,6 +260,14 @@ h6 {
     gap: 30px;
     
 }
+
+.recipe_info {
+    display: flex;
+    gap: 40px;            
+    align-items: center;
+    flex-direction: row;
+}
+
 .recipe_info_item{
     display: flex;
     align-items: center;
