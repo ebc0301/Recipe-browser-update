@@ -128,20 +128,12 @@ body {
 
 
 /* Hero Section */
-.hero {
-    display: flex;
-    justify-content: center;
-    color: var(--background-color-light);
-    position: relative;
-    width: var(--width-full);
-    top: 0;
-    min-height: 600px;
-    height: auto;
-    margin: 0;
-    background-image: url("https://picsum.photos/1920/800");
-    background-size: cover;
-    background-position: center;
-
+.recipe_content{
+    display:grid;
+    grid-template-columns: 7fr 5fr;
+    gap:40px;
+    width: var(--width-12col);
+    margin: 0 auto;
 }
 
 .recipe_hero {
@@ -158,7 +150,7 @@ body {
 
 }
 
-.hero_text h4,
+
 h6 {
     padding: 0;
     margin: 0;
@@ -168,6 +160,7 @@ h6 {
     font-weight: 400;
     font-size: 34px;
     text-transform: uppercase;
+    color: var(--color-light);
 }
 
 .hero_text h6 {
@@ -216,12 +209,19 @@ h6 {
     font-weight: 700;
 }
 
-.recipe_info{
+.recipe_content {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap:40px;
+    width: var(--width-12col);
+    margin: 0 auto;
+}
+
+.recipe_left {
     display: flex;
-    align-items: center;
-    gap: 80px;
-    flex-wrap: wrap;
-    grid-row: 2;
+    flex-direction: column;
+    gap: 30px;
+    
 }
 .recipe_info_item{
     display: flex;
@@ -229,6 +229,7 @@ h6 {
     gap: 5px;
     white-space: nowrap;
     color: var(--color-light);
+    flex-direction: row;
 }
 .recipe_info_item_icon{
 width: 30px; height: 30px; object-fit: contain;
@@ -250,6 +251,7 @@ color: var(--primary-color);
     display: flex;         
     gap: 40px;            
     color: var(--color-light);
+    flex-direction: column;
 }
 
 
