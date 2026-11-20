@@ -9,43 +9,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
+
 <body>
-    About Us
-</body>
-        <footer class="footer">
 
-            <div class="footer_content">
+    <nav class="navigation">
+        <div class="menu-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu">
+            <span> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                    <path d="M0 0h512v512H0z" fill="none" />
+                    <path fill="currentColor" d="M32 96v64h448V96zm0 128v64h448v-64zm0 128v64h448v-64z" />
+                </svg>
+            </span>
+        </div>
+    </nav>
 
+    <div class="mobile-menu">
+        <ul>
+            <li><a class="menu-item" href="index.html">Home</a></li>
+            <li><a class="menu-item" href="recipes.html">Recipes</a></li>
+            <li><a class="menu-item" href="search.html">Search</a></li>
+            <li><a class="menu-item" href="about.html">About</a></li>
+        </ul>
+    </div>
 
-                <div class="footer_socials">
-                    <p> Youtube </p>
-                    <p> Instagram </p>
-                    <p> Facebook </p>
+    <section class="about_section">
 
-                </div>
+        <div class="about_headline">About us</div>
 
+        <div class="about_text">
+            <h2>Good food, made simple</h2>
+            <p>We built this recipe browser because finding a good recipe should not take longer than cooking it. Every recipe on the site is tested, easy to follow and sorted by category.</p>
+            <p>Whether you are looking for a quick weekday dinner or something special for the weekend, you can search, filter and save your favourites in one place.</p>
+        </div>
 
+        <div class="about_image">
+            <img src="img/Kokkemand.png" alt="Kokkemanden">
+        </div>
 
-                <div class="footer_navigation">
-                    <p> Home </p>
-                    <p> Recipes </p>
-                    <p> Guides </p>
-                    <p> About </p>
-                </div>
+    </section>
 
-                <div class="footer_line">
+    <footer class="footer">
 
-                </div>
+        <div class="footer_content">
 
-                <div class="footer_copyright">
-                    <p>Etsy is powered by 100% renewable electricity.</p>
+            <div class="footer_socials">
+                <p> Youtube </p>
+                <p> Instagram </p>
+                <p> Facebook </p>
             </div>
 
+            <div class="footer_navigation">
+                <p> Home </p>
+                <p> Recipes </p>
+                <p> Guides </p>
+                <p> About </p>
+            </div>
 
+            <div class="footer_line"></div>
 
+            <div class="footer_copyright">
+                <p>Etsy is powered by 100% renewable electricity.</p>
+            </div>
 
+        </div>
 
-        </footer>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>

@@ -9,45 +9,153 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
 </head>
+
 <body>
-Search
-</body>
 
-        <footer class="footer">
+    <nav class="navigation">
+        <div class="menu-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu">
+            <span> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                    <path d="M0 0h512v512H0z" fill="none" />
+                    <path fill="currentColor" d="M32 96v64h448V96zm0 128v64h448v-64zm0 128v64h448v-64z" />
+                </svg>
+            </span>
+        </div>
+    </nav>
 
-            <div class="footer_content">
+    <div class="mobile-menu">
+        <ul>
+            <li><a class="menu-item" href="index.html">Home</a></li>
+            <li><a class="menu-item" href="recipes.html">Recipes</a></li>
+            <li><a class="menu-item" href="search.html">Search</a></li>
+            <li><a class="menu-item" href="about.html">About</a></li>
+        </ul>
+    </div>
 
 
-                <div class="footer_socials">
-                    <p> Youtube </p>
-                    <p> Instagram </p>
-                    <p> Facebook </p>
 
-                </div>
+    <section class="search_section">
 
+        <div class="search_left">
+            <h1 class="search_title">Full search</h1>
 
-
-                <div class="footer_navigation">
-                    <p> Home </p>
-                    <p> Recipes </p>
-                    <p> Guides </p>
-                    <p> About </p>
-                </div>
-
-                <div class="footer_line">
-
-                </div>
-
-                <div class="footer_copyright">
-                    <p>Etsy is powered by 100% renewable electricity.</p>
+            <div class="search_box">
+                <span class="search_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <path d="M0 0h16v16H0z" fill="none" />
+                        <path fill="currentColor"
+                            d="M6.5 1a5.5 5.5 0 0 1 4.437 8.749l3.556 2.846a1.351 1.351 0 1 1-1.898 1.898l-2.846-3.556A5.5 5.5 0 1 1 6.5 1m0 2a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7" />
+                    </svg>
+                </span>
+                <input type="text" placeholder="Search" class="search_input">
             </div>
 
+            <p class="search_hint">Let's go already!</p>
+        </div>
+
+        <form class="search_filter">
+            <h2 class="filter_title">Search filter : category</h2>
+
+            <div class="filter_options">
+                <div class="filter_column">
+                    <div class="filter_option">
+                        <input type="radio" name="category" value="seafood">
+                        <span>Seafood</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="radio" name="category" value="beef-pork" checked>
+                        <span>Beef/Pork</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="radio" name="category" value="chicken">
+                        <span>Chicken</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="radio" name="category" value="snacks">
+                        <span>Snacks</span>
+                    </div>
+                </div>
+
+                <div class="filter_column">
+                    <div class="filter_option">
+                        <input type="radio" name="category" value="pasta">
+                        <span>Pasta</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="radio" name="category" value="vegetarian">
+                        <span>Vegetarian</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="radio" name="category" value="dessert">
+                        <span>Dessert</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="section_cutoff"></div>
 
 
+    </section>
 
+    <section class="search_results">
 
-        </footer>
+        <div class="search_result">
+            <div class="result_category border_seafood">
+                Category: <span class="text_seafood">Seafood</span>
+            </div>
+            <h3 class="result_title">Search result one</h3>
+            <p class="result_excerpt">This will be the excerpt from WordPress, and you can control several things here. Like the length of the text that is shown and multiple other things. Now i just writing stuff to fill it out, and the final three dots indicate there is more text ...</p>
+        </div>
+
+        <div class="search_result">
+            <div class="result_category border_chicken">
+                Category: <span class="text_chicken">Chicken</span>
+            </div>
+            <h3 class="result_title">Search result two</h3>
+            <p class="result_excerpt">This will be the excerpt from WordPress, and you can control several things here. Like the length of the text that is shown and multiple other things. Now i just writing stuff to fill it out, and the final three dots indicate there is more text ...</p>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer_content">
+
+            <div class="footer_socials">
+                <p> Youtube </p>
+                <p> Instagram </p>
+                <p> Facebook </p>
+            </div>
+
+            <div class="footer_navigation">
+                <p> Home </p>
+                <p> Recipes </p>
+                <p> Guides </p>
+                <p> About </p>
+            </div>
+
+            <div class="footer_line"></div>
+
+            <div class="footer_copyright">
+                <p>Etsy is powered by 100% renewable electricity.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
 
 </html>
